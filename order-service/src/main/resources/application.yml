@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: order-service
+server:
+  port: 8083
+eureka:
+  instance:
+    hostname: ${spring.application.name}
+    ip-address: localhost
+    prefer-ip-address: true
+  client:
+    fetch-registry: true # 拉取注册信息
+    register-with-eureka: true # 注册当前服务
+    service-url:
+      defaultZone: http://localhost:8761/eureka

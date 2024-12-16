@@ -1,0 +1,5 @@
+.idea/
+target/
+small-service.iml
+eureka-server/target
+user-service/target
