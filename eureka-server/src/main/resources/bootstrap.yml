@@ -1,0 +1,14 @@
+#spring:
+#  application:
+#    name: eureka-server
+#
+#server:
+#  port: 8761
+#
+## 默认 http://127.0.0.1:8081/
+#eureka:
+#  instance:
+#    hostname: standalone
+#  client:
+#    register-with-eureka: false # 不注册自己
+#    fetch-registry: false # 不拉取最新数据

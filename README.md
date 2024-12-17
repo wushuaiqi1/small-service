@@ -1,11 +1,22 @@
 # 介绍
-application.yml成功加载eureka服务，但是使用bootstrap却加载失败。
 
+eureka作为服务注册与发现中心
 
-eureka作为注册中心
 
 
 # bug踩坑
+
+## 使用bootstrap加载eureka失败
+eureka配置在application能加载，在bootstrap中配置，加载失败。
+
+```xml
+<!--从SpringBoot2.4开始，bootstrap配置文件默认是不生效的状态，需要使用以下配置-->
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-bootstrap</artifactId>
+    <version>3.1.6</version>
+</dependency>
+```
 
 ## A服务调用B服务出现502
 [SpringCloudEureka+RestTemplate]
