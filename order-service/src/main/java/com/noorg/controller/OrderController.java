@@ -15,7 +15,6 @@ public class OrderController {
 
     private final AtomicInteger sequence = new AtomicInteger(0);
 
-
     @GetMapping("state")
     public Boolean state() throws Exception {
         log.info("OrderController state:{}", true);

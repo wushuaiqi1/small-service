@@ -13,14 +13,7 @@ eureka作为注册中心
 
 
 Springboot restTemplate对象 并不具有解析eureka对象名称到ip+port的能力 需要配合@LoadBalanced注解使用
-需要引入依赖
-```xml
-<dependency>
-    <groupId>org.springframework.cloud</groupId>
-    <artifactId>spring-cloud-starter-loadbalancer</artifactId>
-    <version>3.1.7</version>
-</dependency>
-```
+备注：eureka-client内部有spring-spring-cloud-starter-loadbalancer此依赖
 
 ```java
 @Configuration
