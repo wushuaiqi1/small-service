@@ -1,13 +1,14 @@
 # 介绍
 
 eureka作为服务注册与发现中心
-
+loadbalancer作为客户端负载均衡器，可搭配restTemplate实现。
+gateway作为API网关层，对外暴露接口，所有的内部服务通过API层透传，通过前缀区分。
 
 
 # bug踩坑
 
 ## 使用bootstrap加载eureka失败
-eureka配置在application能加载，在bootstrap中配置，加载失败。
+eureka配置在application能加载，在bootstrap中配置，加载失败。(Ribbon现在已经被废弃)
 
 ```xml
 <!--从SpringBoot2.4开始，bootstrap配置文件默认是不生效的状态，需要使用以下配置-->
