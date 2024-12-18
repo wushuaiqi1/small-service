@@ -13,6 +13,7 @@
         <module>user-service</module>
         <module>eureka-server</module>
         <module>order-service</module>
+        <module>openfeign-service</module>
     </modules>
 
     <properties>
@@ -23,6 +24,7 @@
         <spring.cloud.netflix.version>3.1.6</spring.cloud.netflix.version>
         <spring.cloud.common.version>3.1.7</spring.cloud.common.version>
         <spring.cloud.bootstrap.version>3.1.7</spring.cloud.bootstrap.version>
+        <spring.cloud.openfeign.version>3.1.8</spring.cloud.openfeign.version>
     </properties>
 
     <parent>
@@ -49,6 +51,11 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-bootstrap</artifactId>
                 <version>${spring.cloud.bootstrap.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-openfeign</artifactId>
+                <version>${spring.cloud.openfeign.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
