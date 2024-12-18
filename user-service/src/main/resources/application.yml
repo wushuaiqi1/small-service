@@ -3,6 +3,8 @@ spring:
     name: user-service
 server:
   port: 8082
+  servlet:
+    context-path: /user-service
 eureka:
   instance:
     hostname: ${spring.application.name}

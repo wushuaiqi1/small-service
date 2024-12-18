@@ -1,4 +1,4 @@
-package com.noorg.controller;
+package com.noorg;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
